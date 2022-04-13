@@ -10,7 +10,7 @@ figured it'll be better for more users if there were a way of bulk-editing a spr
 of translated strings, rather than having to modify a PO file which is possibly a bit
 technical for many non-programmers.
 
-Meanwhile, [https://github.com/zoometh](@zoometh) developed a way of automatically
+Meanwhile, [@zoometh](https://github.com/zoometh) developed a way of automatically
 filling PO files with automated translations from Google Translate using the Python
 deep-translator library. So I borrowed some of that code in order to include an extra
 step in my conversion process.
