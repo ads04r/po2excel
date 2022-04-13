@@ -10,18 +10,18 @@ figured it'll be better for more users if there were a way of bulk-editing a spr
 of translated strings, rather than having to modify a PO file which is possibly a bit
 technical for many non-programmers.
 
-Meanwhile, @zoometh developed a way of automatically filling PO files with automated
-translations from Google Translate using the Python deep-translate library. So I
-borrowed some of that code in order to include an extra step in my conversion
-process.
+Meanwhile, [https://github.com/zoometh](@zoometh) developed a way of automatically
+filling PO files with automated translations from Google Translate using the Python
+deep-translator library. So I borrowed some of that code in order to include an extra
+step in my conversion process.
 
-Proposed workflow
------------------
+Example workflow
+----------------
 
 1. Download PO file from Transifex
 2. Run PO file through po2excel
 
-    python3 po2excel.py input_file.po output_file.xlsx --format xlsx
+    ```python3 po2excel.py input_file.po output_file.xlsx --format xlsx```
 
 3. Load the resulting file into Excel or equivalent
 4. Browse the columns; the first column will contain the msgid, the second will
@@ -36,7 +36,7 @@ Proposed workflow
 8. Run the spreadsheet through excel2po, using the unmodified PO file downloaded
    from Transifex as a base file. Doing this will sort out any clashes.
 
-    python exceltopo.py spreadsheet.xlsx output_file.po --base input_file.po
+    ```python exceltopo.py spreadsheet.xlsx output_file.po --base input_file.po```
 
 9. Upload the resulting po file back to Transifex.
 
