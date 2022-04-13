@@ -1,0 +1,4 @@
+deep-translator==1.5.0
+openpyxl==3.0.9
+polib==1.1.1
+progress==1.6
