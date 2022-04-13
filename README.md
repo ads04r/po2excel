@@ -40,3 +40,8 @@ Example workflow
 
 9. Upload the resulting po file back to Transifex.
 
+Just to clarify, everything in the third column is automatically generated, and will
+be lost in the conversion back to PO. It is simply only created so that you can
+check the automatic translations over before accepting them into the file (by
+copying them into the second column). Also, there is no point running an automatic
+translation for a string that has already been translated, so we don't do that.
