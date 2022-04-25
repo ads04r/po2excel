@@ -36,7 +36,7 @@ Example workflow
 8. Run the spreadsheet through excel2po, using the unmodified PO file downloaded
    from Transifex as a base file. Doing this will sort out any clashes.
 
-    ```python exceltopo.py spreadsheet.xlsx output_file.po --base input_file.po```
+    ```python excel2po.py spreadsheet.xlsx output_file.po --base input_file.po```
 
 9. Upload the resulting po file back to Transifex.
 
